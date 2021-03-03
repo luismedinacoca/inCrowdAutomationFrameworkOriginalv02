@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="19811" started-at="2021-03-03T14:11:32Z" finished-at="2021-03-03T14:11:52Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@737996a0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="19811" started-at="2021-03-03T14:11:32Z" finished-at="2021-03-03T14:11:52Z">
+      <class name="runners.TestRunner">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:runners.TestRunner@737996a0]" name="setUp" is-config="true" duration-ms="6699" started-at="2021-03-03T11:11:25Z" finished-at="2021-03-03T11:11:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.TestRunner@737996a0]" name="setUpClass" is-config="true" duration-ms="1406" started-at="2021-03-03T11:11:32Z" finished-at="2021-03-03T11:11:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@737996a0]" name="runScenario" duration-ms="1805" started-at="2021-03-03T11:11:33Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-03T11:11:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Unsuccessful Admin Login using valid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Successful Orange HRM Login]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@737996a0]" name="runScenario" duration-ms="3847" started-at="2021-03-03T11:11:35Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-03T11:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful Admin Login using invalid credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Successful Orange HRM Login]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@737996a0]" name="runScenario" duration-ms="10474" started-at="2021-03-03T11:11:39Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-03-03T11:11:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful Admin Logout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Successful Orange HRM Logout]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='welcome-menu']//a[text()='logout']"}
+  (Session info: MicrosoftEdge=88.0.705.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BAI8GB9', ip: '192.168.1.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 88.0.705.81, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59761}, msedge: {msedgedriverVersion: 88.0.705.68 (d333496c4f324d..., userDataDir: C:\Users\usuario\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 94beada21b998ed615e7fa717fd46c24
+*** Element info: {Using=xpath, value=//div[@id='welcome-menu']//a[text()='logout']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='welcome-menu']//a[text()='logout']"}
+  (Session info: MicrosoftEdge=88.0.705.81)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-BAI8GB9', ip: '192.168.1.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 88.0.705.81, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59761}, msedge: {msedgedriverVersion: 88.0.705.68 (d333496c4f324d..., userDataDir: C:\Users\usuario\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 94beada21b998ed615e7fa717fd46c24
+*** Element info: {Using=xpath, value=//div[@id='welcome-menu']//a[text()='logout']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at pageObjects.HomePage.clickLogout(HomePage.java:29)
+	at stepdefinitions.LogoutSteps.user_clicks_on_logout_button(LogoutSteps.java:19)
+	at ?.user clicks on Logout button(file:///C:/Workspace/InCrowdAutomationFramework/InCrowdAutomationFramework_Original/src/test/resources/features/3-SuccessLogout.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.TestRunner@737996a0]" name="tearDownClass" is-config="true" duration-ms="2250" started-at="2021-03-03T11:11:50Z" finished-at="2021-03-03T11:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:runners.TestRunner@737996a0]" name="tearDown" is-config="true" duration-ms="3771" started-at="2021-03-03T11:11:52Z" finished-at="2021-03-03T11:11:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
