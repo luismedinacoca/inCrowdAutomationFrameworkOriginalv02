@@ -19,33 +19,33 @@
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>net.masterthought</groupId>
-                <artifactId>maven-cucumber-reporting</artifactId>
-                <version>5.0.0</version>
-                <executions>
-                    <execution>
-                        <id>execution</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <projectName>InCrowd-Automation-Report</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>
-                            <!--                            <enableFlashCharts>true</enableFlashCharts>-->
-                            <buildNumber>42</buildNumber>
-                            <!--                            <parallelTesting>false</parallelTesting>-->
-                            <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>
-                            <jsonFiles>
-                                <jsonFile>cucumber.json</jsonFile>
-                            </jsonFiles>
-                            <!--                            <testFailureIgnore>true</testFailureIgnore>-->
-                            <!--                            <buildSuccessOnTestFailure>true</buildSuccessOnTestFailure>-->
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>net.masterthought</groupId>-->
+<!--                <artifactId>maven-cucumber-reporting</artifactId>-->
+<!--                <version>5.0.0</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>execution</id>-->
+<!--                        <phase>verify</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>generate</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <projectName>InCrowd-Automation-Report</projectName>-->
+<!--                            <outputDirectory>${project.build.directory}/cucumber-reports</outputDirectory>-->
+<!--                            &lt;!&ndash;                            <enableFlashCharts>true</enableFlashCharts>&ndash;&gt;-->
+<!--                            <buildNumber>42</buildNumber>-->
+<!--                            &lt;!&ndash;                            <parallelTesting>false</parallelTesting>&ndash;&gt;-->
+<!--                            <inputDirectory>${project.build.directory}/cucumber-reports</inputDirectory>-->
+<!--                            <jsonFiles>-->
+<!--                                <jsonFile>cucumber.json</jsonFile>-->
+<!--                            </jsonFiles>-->
+<!--                            &lt;!&ndash;                            <testFailureIgnore>true</testFailureIgnore>&ndash;&gt;-->
+<!--                            &lt;!&ndash;                            <buildSuccessOnTestFailure>true</buildSuccessOnTestFailure>&ndash;&gt;-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
