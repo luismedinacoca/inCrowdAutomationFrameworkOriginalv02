@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="1.805" tests="3" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="1.969" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_281\jre\bin"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_281\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="es"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,83 +64,6 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="runScenario" classname="runners.TestRunner" time="1.805"/>
-  <testcase name="runScenario" classname="runners.TestRunner" time="3.847"/>
-  <testcase name="runScenario" classname="runners.TestRunner" time="10.483">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id=&apos;welcome-menu&apos;]//a[text()=&apos;logout&apos;]&quot;}&#10;  (Session info: MicrosoftEdge=88.0.705.81)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-BAI8GB9&apos;, ip: &apos;192.168.1.36&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 88.0.705.81, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59761}, msedge: {msedgedriverVersion: 88.0.705.68 (d333496c4f324d..., userDataDir: C:\Users\usuario\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 94beada21b998ed615e7fa717fd46c24&#10;*** Element info: {Using=xpath, value=//div[@id=&apos;welcome-menu&apos;]//a[text()=&apos;logout&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='welcome-menu']//a[text()='logout']"}
-  (Session info: MicrosoftEdge=88.0.705.81)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BAI8GB9', ip: '192.168.1.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 88.0.705.81, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59761}, msedge: {msedgedriverVersion: 88.0.705.68 (d333496c4f324d..., userDataDir: C:\Users\usuario\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 94beada21b998ed615e7fa717fd46c24
-*** Element info: {Using=xpath, value=//div[@id='welcome-menu']//a[text()='logout']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy21.click(Unknown Source)
-	at pageObjects.HomePage.clickLogout(HomePage.java:29)
-	at stepdefinitions.LogoutSteps.user_clicks_on_logout_button(LogoutSteps.java:19)
-	at ✽.user clicks on Logout button(file:///C:/Workspace/InCrowdAutomationFramework/InCrowdAutomationFramework_Original/src/test/resources/features/3-SuccessLogout.feature:5)
-</failure>
-    <system-out><![CDATA[
-@smoke
-Scenario: Successful Admin Logout    # src/test/resources/features/3-SuccessLogout.feature:3
-========Before Scenario===========
-Name : Successful Admin Logout
-home
-  Given user is on the "home" screen # stepdefinitions.LoginSteps.user_is_on_the_screen(java.lang.String)
-  And user clicks on Logout button   # stepdefinitions.LogoutSteps.user_clicks_on_logout_button()
-      org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='welcome-menu']//a[text()='logout']"}
-  (Session info: MicrosoftEdge=88.0.705.81)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-BAI8GB9', ip: '192.168.1.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 88.0.705.81, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59761}, msedge: {msedgedriverVersion: 88.0.705.68 (d333496c4f324d..., userDataDir: C:\Users\usuario\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 94beada21b998ed615e7fa717fd46c24
-*** Element info: {Using=xpath, value=//div[@id='welcome-menu']//a[text()='logout']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy21.click(Unknown Source)
-	at pageObjects.HomePage.clickLogout(HomePage.java:29)
-	at stepdefinitions.LogoutSteps.user_clicks_on_logout_button(LogoutSteps.java:19)
-	at âœ½.user clicks on Logout button(file:///C:/Workspace/InCrowdAutomationFramework/InCrowdAutomationFramework_Original/src/test/resources/features/3-SuccessLogout.feature:5)
-
-  Then user is on the "login" screen # stepdefinitions.LoginSteps.user_is_on_the_screen(java.lang.String)
-========After Scenario===========
-Name : Successful Admin Logout
-
-    Embedding Successful Admin Logout [image/png 82895 bytes]
-
-]]></system-out>
-  </testcase>
+  <testcase name="runScenario" classname="runners.TestRunner" time="1.969"/>
+  <testcase name="runScenario" classname="runners.TestRunner" time="4.001"/>
 </testsuite>
